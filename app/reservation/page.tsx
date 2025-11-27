@@ -60,7 +60,7 @@ export default function Reservation() {
       iroriDesc: "囲炉裏、ウッドデッキ付きのお部屋（1〜2名）",
       price44000: "¥44,000/名",
       price57200: "¥57,200/名",
-      price55500: "¥55,500/名",
+      price55000: "¥55,000/名",
       roomDetails: "お部屋の詳細はこちら",
       tastingCourseAlcohol: "Tasting Course \n -Alcohol Pairing",
       tastingCourseNonAlcohol: "Tasting Course \n -Non-Alcoholic Pairing",
@@ -105,7 +105,7 @@ export default function Reservation() {
       iroriDesc: "A suite fitted with a wooden deck and irori fireplace for 1 or 2 guests",
       price44000: "¥44,000 per guest",
       price57200: "¥57,200 per guest",
-      price55500: "¥55,500 per guest",
+      price55000: "¥55,000 per guest",
       roomDetails: "View Room Details",
       tastingCourseAlcohol: "Tasting Course \n -Alcohol Pairing",
       tastingCourseNonAlcohol: "Tasting Course \n Non-Alcoholic Pairing",
@@ -245,7 +245,7 @@ export default function Reservation() {
                   </li>
                   <li className="flex items-center justify-between py-4 border-b-[0.5px] border-[rgb(51,51,51)]">
                     <span className="whitespace-pre-line">{c.tastingCourseNonAlcohol}</span>
-                    <span className="tracking-wide">{c.price55500}</span>
+                    <span className="tracking-wide">{c.price55000}</span>
                   </li>
                   <li className="flex items-center justify-between py-4 border-b-[0.5px] border-[rgb(51,51,51)]">
                     <span>{c.breakfast}</span>
@@ -412,7 +412,7 @@ export default function Reservation() {
                        <div className="border-b-[0.5px] border-[rgb(51,51,51)] pb-6">
                          <div className="flex items-center justify-between">
                            <span className="text-[16px] whitespace-pre-line">{c.tastingCourseNonAlcohol}</span>
-                           <span className="text-[16px] tracking-wide">{c.price55500}</span>
+                           <span className="text-[16px] tracking-wide">{c.price55000}</span>
                          </div>
                        </div>
                        <div className="border-b-[0.5px] border-[rgb(51,51,51)] pb-6">
