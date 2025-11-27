@@ -4,8 +4,11 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SectionBar from "../components/SectionBar";
+import { useLocale } from "../contexts/LocaleContext";
 
 export default function Contact() {
+  const { locale } = useLocale();
+
   // 全デバイスでスクロール制御と最上部リセット
   useEffect(() => {
     // ページ読み込み時に最上部へスクロール
@@ -23,6 +26,31 @@ export default function Contact() {
       clearTimeout(initTimeout);
     };
   }, []);
+
+  const CONTENTS = {
+    JP: {
+      labelMail: "MAIL",
+      labelTel: "TEL",
+      telNum: "0554-52-2781",
+      labelInstagram: "Instagram",
+      labelAddress: "Address",
+      addressZip: "〒402-0213",
+      addressText: "山梨県南都留郡道志村谷相7383-2",
+      labelMap: "Google Map",
+    },
+    EN: {
+      labelMail: "Email:",
+      labelTel: "Phone Number:",
+      telNum: "+81 0554-52-2781",
+      labelInstagram: "Instagram:",
+      labelAddress: "Address:",
+      addressZip: "",
+      addressText: "7383-2 Yasou, Doshimura, Minamitsuru-gun, Yamanashi 402-0213, Japan",
+      labelMap: "Google Maps Link",
+    }
+  };
+
+  const c = CONTENTS[locale];
 
   return (
     <div className="font-sans relative flex flex-col overflow-x-hidden h-screen">
@@ -45,22 +73,22 @@ export default function Contact() {
           
           {/* 連絡先情報 */}
           <div className="layout-left md:layout-none w-full md:w-auto text-black flex flex-col justify-center items-start">
-            <div className="grid grid-cols-[80px_1fr] md:grid-cols-[100px_1fr] gap-y-3 md:gap-y-4 md:gap-x-6 text-xs md:text-[16px]">
-                <span className="font-light">MAIL</span>
+            <div className={`grid ${locale === 'EN' ? 'grid-cols-[120px_1fr] md:grid-cols-[130px_1fr]' : 'grid-cols-[80px_1fr] md:grid-cols-[100px_1fr]'} gap-y-3 md:gap-y-4 md:gap-x-6 text-xs md:text-[16px]`}>
+                <span className="font-light">{c.labelMail}</span>
                 <a href="mailto:aubergekoki@gmail.com" className="hover:no-underline">aubergekoki@gmail.com</a>
 
-                <span className="font-light">TEL</span>
-                <a href="tel:0554522781" className="hover:no-underline">0554-52-2781</a>
+                <span className="font-light">{c.labelTel}</span>
+                <a href="tel:0554522781" className="hover:no-underline">{c.telNum}</a>
 
-                <span className="font-light">Instagram</span>
+                <span className="font-light">{c.labelInstagram}</span>
                 <a href="https://www.instagram.com/aubergekoki/" target="_blank" rel="noopener noreferrer" className="hover:no-underline">@aubergekoki</a>
 
-                <span className="font-light">Address</span>
+                <span className="font-light">{c.labelAddress}</span>
                 <div>
-                  <div>〒402-0213</div>
-                  <div>山梨県南都留郡道志村谷相7383-2</div>
+                  {c.addressZip && <div>{c.addressZip}</div>}
+                  <div>{c.addressText}</div>
                   <div className="mt-3">
-                    <a href="https://maps.app.goo.gl/wzpyAXsDesZ4mmiq9?g_st=ic" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline text-[12px] md:text-[14px]">Google Map</a>
+                    <a href="https://maps.app.goo.gl/wzpyAXsDesZ4mmiq9?g_st=ic" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline text-[12px] md:text-[14px]">{c.labelMap}</a>
                   </div>
                 </div>
               </div>
