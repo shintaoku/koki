@@ -19,7 +19,7 @@ export default function About() {
       poeticText: "山を扱く、なにもないようでなんでもある。\n二十四節季の記憶を耕す。",
     },
     EN: {
-      poeticText: "We work with what the mountains provide us each season, transforming ordinary elements into extraordinary creations.",
+      poeticText: "We work with what the mountains provide us each season,\n transforming ordinary elements into extraordinary creations.",
     }
   };
 
@@ -49,11 +49,17 @@ export default function About() {
         <div className="w-full max-w-[640px] mx-auto pl-4 pr-0">
           <div className="flex items-start w-full">
             {/* 左：縦書きテキスト（固定幅15%） */}
-            <div className="shrink-0 w-[15%] mt-6 -ml-4 text-black text-[12px] leading-relaxed tracking-wide whitespace-pre-line break-keep" style={locale === 'JP' ? { writingMode: 'vertical-rl', textOrientation: 'mixed' } : { writingMode: 'horizontal-tb', width: '30%', marginLeft: '-20px' }}>
+            <div 
+              className="shrink-0 w-[15%] mt-6 -ml-4 text-black text-[12px] leading-relaxed tracking-wide whitespace-pre-wrap break-keep" 
+              style={{ 
+                writingMode: 'vertical-rl', 
+                textOrientation: locale === 'JP' ? 'mixed' : 'upright'
+              }}
+            >
               {c.poeticText}
             </div>
             {/* 右：画像（固定幅85%） */}
-            <div className={`w-[85%] ml-auto mt-16 ${locale === 'EN' ? 'w-[70%]' : ''}`}>
+            <div className="w-[85%] ml-auto mt-16">
               <div className="relative aspect-[16/12]">
                 <Image
                   src="/about_2.jpg"
@@ -75,7 +81,11 @@ export default function About() {
           <div className="relative w-full aspect-[14/9] md:aspect-[16/9]">
             {/* 左の縦書きキャプション */}
             <div
-              className={`absolute top-1/2 -translate-y-1/2 left-2 md:left-0 lg:-left-12 xl:-left-20 2xl:-left-40 z-10 text-black leading-relaxed tracking-wide text-[15px] md:text-[18px] whitespace-pre-wrap break-keep ${locale === 'EN' ? 'w-[300px] -ml-20 text-left' : ''}`}
+              className={`absolute top-1/2 -translate-y-1/2 z-10 text-black leading-relaxed tracking-wide text-[15px] md:text-[18px] whitespace-pre-wrap break-keep 
+                ${locale === 'JP' 
+                  ? 'left-2 md:left-0 lg:-left-12 xl:-left-20 2xl:-left-40' 
+                  : 'left-[5%] w-[45%] text-left'
+                }`}
               style={locale === 'JP' ? { writingMode: 'vertical-rl', textOrientation: 'mixed' } : {}}
             >
               {c.poeticText}
