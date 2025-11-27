@@ -127,7 +127,7 @@ export default function Reservation() {
                     <span className="tracking-wide">¥3,300/名</span>
                   </li>
                 </ul>
-                <p className="text-[12px] mt-3 whitespace-nowrap">※ 3名宿泊の場合は、お部屋のご料金を¥55,000（税込）にて<br></br>ご案内させて頂きます。</p>
+                <p className="text-[12px] mt-3 whitespace-nowrap">※ 3名宿泊の場合は、お部屋のご料金を¥55,500（税込）にて<br></br>ご案内させて頂きます。</p>
               </div>
 
               {/* IRORI */}
@@ -147,7 +147,7 @@ export default function Reservation() {
                   </li>
                   <li className="flex items-center justify-between py-4 border-b-[0.5px] border-[rgb(51,51,51)]">
                     <span>Tasting Course <br></br>-Non Alchol Pairing</span>
-                    <span className="tracking-wide">¥55,000/名</span>
+                    <span className="tracking-wide">¥55,500/名</span>
                   </li>
                   <li className="flex items-center justify-between py-4 border-b-[0.5px] border-[rgb(51,51,51)]">
                     <span>朝食（オプション）</span>
@@ -282,7 +282,7 @@ export default function Reservation() {
                       <div className="border-b-[0.5px] border-[rgb(51,51,51)] pb-6">
                         <div className="flex items-center justify-between">
                           <span className="text-[16px]">Tasting Course<br className="hidden md:block" />-Non Alcohol Pairing</span>
-                          <span className="text-[16px] tracking-wide">¥55,000/名</span>
+                          <span className="text-[16px] tracking-wide">¥55,500/名</span>
                         </div>
                       </div>
                       <div className="border-b-[0.5px] border-[rgb(51,51,51)] pb-6">
@@ -292,7 +292,7 @@ export default function Reservation() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-[12px] md:text-[12px] text-black mt-4">※ 3名宿泊の場合は、お部屋のご料金を¥55,000（税込）にてご案内させて頂きます。</p>
+                    <p className="text-[12px] md:text-[12px] text-black mt-4">※ 3名宿泊の場合は、お部屋のご料金を¥55,500（税込）にてご案内させて頂きます。</p>
 
                     <h3 className="text-[20px] tracking-wide mt-6 mb-2">IRORI</h3>
                     <div className="border-b-[0.5px] border-[rgb(51,51,51)] mb-6 overflow-x-auto">
@@ -314,7 +314,7 @@ export default function Reservation() {
                        <div className="border-b-[0.5px] border-[rgb(51,51,51)] pb-6">
                          <div className="flex items-center justify-between">
                            <span className="text-[16px]">Tasting Course<br className="hidden md:block" />-Non Alcohol Pairing</span>
-                           <span className="text-[16px] tracking-wide">¥55,000/名</span>
+                           <span className="text-[16px] tracking-wide">¥55,500/名</span>
                          </div>
                        </div>
                        <div className="border-b-[0.5px] border-[rgb(51,51,51)] pb-6">
