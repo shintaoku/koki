@@ -31,10 +31,10 @@ export default function Stay() {
     JP: {
       konoma: "KONOMA",
       konomaTitle: "ワンルームの広々としたお部屋",
-      konomaDesc: "37㎡ / 1-3名 / セミダブルベッド2台 / ソファベッド1台",
+      konomaDesc: "37㎡ / 1 〜 3名 / セミダブルベッド2台 / ソファベッド1台",
       irori: "IRORI",
       iroriTitle: "囲炉裏とウッドデッキ付きのお部屋",
-      iroriDesc: "36㎡ / 1-2名 / セミダブルベッド2台",
+      iroriDesc: "36㎡ / 1 〜 2名 / セミダブルベッド2台",
       checkIn: "チェックイン 15:00〜",
       checkOut: "チェックアウト 〜11:00",
       amenitiesTitle: "設備・アメニティ",

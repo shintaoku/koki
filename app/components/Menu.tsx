@@ -113,7 +113,7 @@ export default function Menu({ onClose, selectedMenuItem }: MenuProps) {
                     <div className="w-80">
                       <h3 className="text-2xl font-light mb-4 text-black">IRORI</h3>
                       <p className="text-sm text-gray-700 mb-2">00 sqm / Maximum 3 persons / 2 semi double sized bunk bed</p>
-                      <p className="text-sm text-gray-700 mb-4">00㎡ / 1-3名 / ベッド2台</p>
+                      <p className="text-sm text-gray-700 mb-4">00㎡ / 1 〜 3名 / ベッド2台</p>
                       <p className="text-sm text-black">Price: ¥00,000</p>
                     </div>
                   </div>
