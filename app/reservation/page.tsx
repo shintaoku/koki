@@ -62,8 +62,8 @@ export default function Reservation() {
       price57200: "¥57,200/名",
       price55000: "¥55,000/名",
       roomDetails: "お部屋の詳細はこちら",
-      tastingCourseAlcohol: "Tasting Course \n -Alcohol Pairing",
-      tastingCourseNonAlcohol: "Tasting Course \n -Non-Alcoholic Pairing",
+      tastingCourseAlcohol: "Tasting Course \n - Alcohol Pairing",
+      tastingCourseNonAlcohol: "Tasting Course \n - Non-Alcoholic Pairing",
     },
     EN: {
       reservation: "RESERVATION",
@@ -88,7 +88,7 @@ export default function Reservation() {
       price19800: "¥19,800 per guest",
       alcoholPairing: "- Alcohol Pairing",
       price33000: "¥33,000 per guest",
-      nonAlcoholPairing: "Non-Alcoholic Pairing",
+      nonAlcoholPairing: "- Non-Alcoholic Pairing",
       price30800: "¥30,800 per guest",
       priceNote: "*All prices include tax. A service charge will be added separately.",
       dinnerStay: "DINNER & STAY",
@@ -108,7 +108,7 @@ export default function Reservation() {
       price55000: "¥55,000 per guest",
       roomDetails: "View Room Details",
       tastingCourseAlcohol: "Tasting Course \n - Alcohol Pairing",
-      tastingCourseNonAlcohol: "Tasting Course \n Non-Alcoholic Pairing",
+      tastingCourseNonAlcohol: "Tasting Course \n - Non-Alcoholic Pairing",
     }
   };
 
